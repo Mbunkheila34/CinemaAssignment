@@ -11,14 +11,17 @@ CONFIG += c++17
 SOURCES += \
     main.cpp \
     loginwindow.cpp \
+    registerwindow.cpp \
     welcomewindow.cpp
 
 HEADERS += \
     loginwindow.h \
+    registerwindow.h \
     welcomewindow.h
 
 FORMS += \
     loginwindow.ui \
+    registerwindow.ui \
     welcomewindow.ui
 
 # Default rules for deployment.
