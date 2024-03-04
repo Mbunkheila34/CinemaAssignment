@@ -12,11 +12,13 @@ SOURCES += \
     main.cpp \
     loginwindow.cpp \
     registerwindow.cpp \
+    users.cpp \
     welcomewindow.cpp
 
 HEADERS += \
     loginwindow.h \
     registerwindow.h \
+    users.h \
     welcomewindow.h
 
 FORMS += \
