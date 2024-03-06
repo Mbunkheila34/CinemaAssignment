@@ -28,26 +28,14 @@ void LoginWindow::on_loginButton_clicked()
         {
             if(enteredPassword == passwords[i])
             {
-                ui->statusLabel->setText(QString::fromStdString("Successful Login! Welcome"));
-                ui->statusLabel->setVisible(true);
                 int age = ages[i];
                 hide();
                 WelcomeWindow* welcomeWindow = new WelcomeWindow(enteredUsername, age, this);
                 welcomeWindow->show();
-
             }
-            else
-            {
-
-                ui->statusLabel->setText(QString::fromStdString("Wrong Password!!"));
-                ui->statusLabel->setVisible(true);
-            }
-
-            return;
         }
     }
 
-    ui->statusLabel->setText(QString::fromStdString("Username not found! Register instead!"));
     ui->statusLabel->setVisible(true);
 }
 
