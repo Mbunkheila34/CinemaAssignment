@@ -30,8 +30,9 @@ void LoginWindow::on_loginButton_clicked()
             {
                 ui->statusLabel->setText(QString::fromStdString("Successful Login! Welcome"));
                 ui->statusLabel->setVisible(true);
+                int age = ages[i];
                 hide();
-                WelcomeWindow* welcomeWindow = new WelcomeWindow(this);
+                WelcomeWindow* welcomeWindow = new WelcomeWindow(enteredUsername, age, this);
                 welcomeWindow->show();
 
             }
